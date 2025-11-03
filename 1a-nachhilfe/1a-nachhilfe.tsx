@@ -1,5 +1,5 @@
 import "../src/style.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { createRoot } from "react-dom/client";
 
 function App() {
