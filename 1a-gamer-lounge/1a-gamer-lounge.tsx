@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const baseUrl = import.meta.env.BASE_URL;
 
   // Common classes
   const containerClass = "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8";
@@ -80,7 +81,8 @@ function App() {
 
       <section
         id="home"
-        className="min-h-screen flex items-center pt-16 bg-cover bg-center bg-no-repeat relative bg-[url('/images/hero.jpg')]"
+        className="min-h-screen flex items-center pt-16 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: `url(${baseUrl}images/hero.jpg)` }}
       >
         <div className="absolute inset-0 bg-slate-900/60"></div>
         <div className={`${containerClass} relative z-10 w-full`}>
@@ -199,42 +201,42 @@ function App() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
             <div className={`${cardbackCardClass} hover:shadow-yellow-400/20`}>
               <img
-                src="/images/cardback/one-piece.png"
+                src={`${baseUrl}images/cardback/one-piece.png`}
                 alt="One Piece Card Game"
                 className="w-40 h-20 mx-auto object-contain"
               />
             </div>
             <div className={`${cardbackCardClass} hover:shadow-red-400/20`}>
               <img
-                src="/images/cardback/yugioh.jpg"
+                src={`${baseUrl}images/cardback/yugioh.jpg`}
                 alt="Yu-Gi-Oh!"
                 className="w-40 h-20 mx-auto object-contain"
               />
             </div>
             <div className={`${cardbackCardClass} hover:shadow-blue-400/20`}>
               <img
-                src="/images/cardback/magic.png"
+                src={`${baseUrl}images/cardback/magic.png`}
                 alt="Magic the Gathering"
                 className="w-40 h-20 mx-auto object-contain"
               />
             </div>
             <div className={`${cardbackCardClass} hover:shadow-green-400/20`}>
               <img
-                src="/images/cardback/pokemon.png"
+                src={`${baseUrl}images/cardback/pokemon.png`}
                 alt="Pokémon"
                 className="w-40 h-20 mx-auto object-contain"
               />
             </div>
             <div className={`${cardbackCardClass} hover:shadow-orange-400/20`}>
               <img
-                src="/images/cardback/gundam.png"
+                src={`${baseUrl}images/cardback/gundam.png`}
                 alt="Gundam Card Game"
                 className="w-40 h-20 mx-auto object-contain"
               />
             </div>
             <div className={`${cardbackCardClass} hover:shadow-pink-400/20`}>
               <img
-                src="/images/cardback/lorcana.jpg"
+                src={`${baseUrl}images/cardback/lorcana.jpg`}
                 alt="Lorcana"
                 className="w-40 h-20 mx-auto object-contain"
               />
@@ -393,7 +395,7 @@ function App() {
           </div>
 
           <img
-            src="/images/about-us.jpg"
+            src={`${baseUrl}images/about-us.jpg`}
             aria-hidden="true"
             className="w-full h-full object-cover lg:[clip-path:polygon(0%_0%,100%_0%,100%_100%,15%_100%)]"
             alt=""

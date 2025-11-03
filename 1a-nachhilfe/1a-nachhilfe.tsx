@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const baseUrl = import.meta.env.BASE_URL;
 
   // Common classes
   const containerClass = "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8";
@@ -65,7 +66,8 @@ function App() {
 
       <section
         id="home"
-        className="min-h-screen flex items-center pt-16 bg-cover bg-center bg-no-repeat relative bg-[url('/images/aussenansicht.jpg')]"
+        className="min-h-screen flex items-center pt-16 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: `url(${baseUrl}images/aussenansicht.jpg)` }}
       >
         <div className="absolute inset-0 bg-white/40"></div>
         <div className={`${containerClass} relative z-10 w-full`}>
@@ -99,7 +101,7 @@ function App() {
       <section id="unser-angebot" className="bg-gray-100 py-10 md:py-20">
         <div className={`${containerClass} grid grid-cols-1 lg:grid-cols-2 gap-12 items-center`}>
           <img
-            src="/images/aussenansicht.jpg"
+            src={`${baseUrl}images/aussenansicht.jpg`}
             aria-hidden="true"
             className="w-full h-full object-cover lg:[clip-path:polygon(0%_0%,85%_0%,100%_100%,0%_100%)] lg:order-1"
             alt=""
@@ -135,7 +137,7 @@ function App() {
           </div>
 
           <img
-            src="/images/aussenansicht.jpg"
+            src={`${baseUrl}images/aussenansicht.jpg`}
             aria-hidden="true"
             className="w-full h-full object-cover lg:[clip-path:polygon(0%_0%,100%_0%,100%_100%,15%_100%)]"
             alt=""
