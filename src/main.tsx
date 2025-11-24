@@ -16,13 +16,13 @@ function App() {
           style={{ backgroundImage: `url(${baseUrl}images/aussenansicht.jpg)` }}
         ></div>
         <div className="text-center space-y-8 relative z-10 px-6 py-12 bg-black/70 backdrop-blur-sm rounded-xl shadow-2xl text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-2">1a Smart</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-2">1A Smart</h1>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center text-lg font-semibold">
             <a href={`${baseUrl}1a-gamer-lounge/`} className={btnClass}>
-              Zur 1a Gamer Lounge
+              Zur 1A Gamer Lounge
             </a>
             <a href={`${baseUrl}1a-nachhilfe/`} className={btnClass}>
-              Zur 1a Nachhilfe
+              Zur 1A Nachhilfe
             </a>
           </div>
         </div>
@@ -37,12 +37,12 @@ function App() {
               <ul className="space-y-2">
                 <li>
                   <a href={`${baseUrl}1a-gamer-lounge/`} className={linkClass}>
-                    1a Gamer Lounge
+                    1A Gamer Lounge
                   </a>
                 </li>
                 <li>
                   <a href={`${baseUrl}1a-nachhilfe/`} className={linkClass}>
-                    1a Nachhilfe
+                    1A Nachhilfe
                   </a>
                 </li>
               </ul>

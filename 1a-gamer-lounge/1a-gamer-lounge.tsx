@@ -41,7 +41,7 @@ function App() {
       <nav className="sticky top-0 w-full bg-slate-800/95 backdrop-blur-sm z-50 border-b border-slate-700">
         <div className={containerClass}>
           <div className="flex justify-between items-center h-16">
-            <h1 className="text-xl font-bold text-cyan-400">1a Gamer Lounge</h1>
+            <h1 className="text-xl font-bold text-cyan-400">1A Gamer Lounge</h1>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {navItems.map((item) => (
@@ -78,7 +78,6 @@ function App() {
           </div>
         </div>
       </nav>
-
       <section
         id="home"
         className="min-h-screen flex items-center pt-16 bg-cover bg-center bg-no-repeat relative"
@@ -89,7 +88,7 @@ function App() {
           <div className="mx-auto lg:mx-0 text-center lg:text-left max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Play. Compete. Chill.
-              <br /> Alles in der 1a Gamer Lounge.
+              <br /> Alles in der 1A Gamer Lounge.
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
               Dein Wohnzimmer für Gaming, TCG & Turniere!
@@ -313,12 +312,18 @@ function App() {
                   <td className={activityCellTopClass}>One Piece</td>
                 </tr>
                 <tr className={`${tableRowBase} mb-4 rounded-lg border border-slate-900`}>
-                  <td className={dayCellSingleClass}>Mittwoch</td>
+                  <td className={dayCellSingleClass} rowSpan={2}>
+                    Mittwoch
+                  </td>
                   <td className={timeCellClass}>18:30 Uhr</td>
                   <td className={activityCellTopClass}>Yu-Gi-Oh! Advanced Constructed</td>
                 </tr>
+                <tr className={`${tableRowBase} mb-4 rounded-lg border border-slate-900`}>
+                  <td className={timeCellClass}>18:30 Uhr</td>
+                  <td className={activityCellTopClass}>Tekken Locals</td>
+                </tr>
                 <tr className={`${tableRowBase} mb-0 rounded-t-lg`}>
-                  <td className={`p-6 md:py-4 ${dayCellClass}`} rowSpan={2}>
+                  <td className={`p-6 md:py-4 ${dayCellClass}`} rowSpan={3}>
                     Donnerstag
                   </td>
                   <td className={timeCellClass}>18:30 Uhr</td>
@@ -327,6 +332,10 @@ function App() {
                 <tr className={`${tableRowBase} mb-4 rounded-b-lg`}>
                   <td className={timeCellClass}>18:30 Uhr</td>
                   <td className={activityCellClass}>Gundam</td>
+                </tr>
+                <tr className={`${tableRowBase} mb-4 rounded-b-lg`}>
+                  <td className={timeCellClass}>18:30 Uhr</td>
+                  <td className={activityCellClass}>Super Smash Bros. Locals</td>
                 </tr>
                 <tr className={`${tableRowBase} mb-0 rounded-t-lg`}>
                   <td className={`p-6 md:py-4 ${dayCellClass}`} rowSpan={2}>
@@ -403,11 +412,54 @@ function App() {
         </div>
       </section>
 
+      <section id="tickets" className="bg-slate-800">
+        <div
+          className={`${containerClass} grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20`}
+        >
+          <div className="px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">Tickets</h2>
+            <div className="text-lg text-gray-300 space-y-4">
+              <h3 className="text-2xl font-bold text-cyan-400">
+                🎴 DM QUALIFIER – AUGSBURG in der 1A Gamer Lounge 🎴
+              </h3>
+              <p>
+                Der Weg zur Meisterschaft beginnt hier. Die 1A Gamer Lounge ruft alle Duellanten,
+                die bereit sind, Geschichte zu schreiben und sich ihren Platz bei der Deutschen GOAT
+                Meisterschaft 2026 zu sichern! 🐐
+              </p>
+              <p>
+                Stell dich der Herausforderung im Yu-Gi-Oh! GOAT Format – Strategie, Erfahrung und
+                Nerven aus Stahl entscheiden über Sieg oder Niederlage.
+              </p>
+              <ul className="space-y-2">
+                <li>📅 Datum: 21.03.2026</li>
+                <li>🕛 Start: 12:00 Uhr (Einlass ab 11:00 Uhr)</li>
+                <li>📍 Ort: 1A Gamer Lounge, Jakoberstr. 29, 86152 Augsburg</li>
+                <li>💶 Entry: 15,00 €</li>
+                <li>🥤 Bonus: Jeder Teilnehmer erhält ein Getränk + 1x Suprise Goody Bag</li>
+                <li>👥 Teilnehmer: max. 32 Spieler (bei hoher Nachfrage erweiterbar)</li>
+                <li>📈 Pro 24 Spieler erhält 1 Spieler ein Invite zur DM 2026!</li>
+                <li>🎟️ Tickets, Preise &amp; Infos: → Link folgt in Kürze!</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="flex justify-center sm:px-6 lg:px-8">
+            <iframe
+              height="750"
+              width="500"
+              src="https://shop.weeztix.com/c6150f16-c658-11f0-a9cb-7e126431635e"
+              className="w-full max-w-[500px] h-[900px] md:h-[750px]"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-slate-800 border-t border-slate-700">
         <div className={`${containerClass} py-12`}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className={footerHeadingClass}>1a Gamer Lounge</h3>
+              <h3 className={footerHeadingClass}>1A Gamer Lounge</h3>
               <p className="text-gray-400">Dein ultimatives Ziel für Gaming-Exzellenz.</p>
             </div>
             <div>

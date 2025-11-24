@@ -26,7 +26,7 @@ function App() {
       <nav className="sticky top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-300">
         <div className={containerClass}>
           <div className="flex justify-between items-center h-16">
-            <h1 className="text-xl font-bold text-blue-700">1a Nachhilfe</h1>
+            <h1 className="text-xl font-bold text-blue-700">1A Nachhilfe</h1>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {navItems.map((item) => (
@@ -78,7 +78,7 @@ function App() {
             <p className="text-xl md:text-2xl text-gray-700 mb-8">
               Von der Vorklasse bis zum Abitur.
               <br />
-              Lernen leicht gemacht – mit 1a Nachhilfe.
+              Lernen leicht gemacht – mit 1A Nachhilfe.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-2">
               <a
@@ -109,7 +109,7 @@ function App() {
           <div className="md:pt-20 lg:py-20 px-4 sm:px-6 lg:px-8 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-700">Unser Angebot</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Bei 1a Nachhilfe steht der Schüler im Mittelpunkt. Unser Ziel ist es, individuelle
+              Bei 1A Nachhilfe steht der Schüler im Mittelpunkt. Unser Ziel ist es, individuelle
               Förderung zu bieten – genau so, wie sie gebraucht wird. Egal ob Einzel- oder
               Gruppenunterricht, online oder bei uns vor Ort: wir passen uns flexibel an die
               Bedürfnisse jedes Schülers an.
@@ -131,7 +131,7 @@ function App() {
               Lernen wieder Spaß macht und schnelle Fortschritte sichtbar werden.
             </p>
             <p className="text-lg text-gray-700 mb-8">
-              👉 Starte jetzt mit 1a Nachhilfe – für bessere Noten, mehr Motivation und ein starkes
+              👉 Starte jetzt mit 1A Nachhilfe – für bessere Noten, mehr Motivation und ein starkes
               Selbstvertrauen in der Schule.
             </p>
           </div>
@@ -164,7 +164,7 @@ function App() {
           </div>
 
           <p className="border-t border-gray-300 mt-8 pt-6 text-center text-gray-600">
-            Lernen leicht gemacht – mit 1a Nachhilfe.
+            Lernen leicht gemacht – mit 1A Nachhilfe.
           </p>
         </div>
       </footer>
