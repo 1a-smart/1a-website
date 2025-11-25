@@ -151,12 +151,12 @@ function App() {
             <h3 className={footerHeadingClass}>Rechtliches</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className={footerLinkClass}>
+                <a href={`${baseUrl}datenschutz/`} className={footerLinkClass}>
                   Datenschutz
                 </a>
               </li>
               <li>
-                <a href="#" className={footerLinkClass}>
+                <a href={`${baseUrl}impressum/`} className={footerLinkClass}>
                   Impressum
                 </a>
               </li>

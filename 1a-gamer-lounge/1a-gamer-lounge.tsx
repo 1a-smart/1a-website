@@ -439,7 +439,6 @@ function App() {
                 <li>🥤 Bonus: Jeder Teilnehmer erhält ein Getränk + 1x Suprise Goody Bag</li>
                 <li>👥 Teilnehmer: max. 32 Spieler (bei hoher Nachfrage erweiterbar)</li>
                 <li>📈 Pro 24 Spieler erhält 1 Spieler ein Invite zur DM 2026!</li>
-                <li>🎟️ Tickets, Preise &amp; Infos: → Link folgt in Kürze!</li>
               </ul>
             </div>
           </div>
@@ -449,7 +448,7 @@ function App() {
               height="750"
               width="500"
               src="https://shop.weeztix.com/c6150f16-c658-11f0-a9cb-7e126431635e"
-              className="w-full max-w-[500px] h-[900px] md:h-[750px]"
+              className="w-full max-w-[500px] h-[900px] md:h-[750px] rounded-3xl overflow-hidden"
             ></iframe>
           </div>
         </div>
@@ -480,12 +479,12 @@ function App() {
               <h3 className={footerHeadingClass}>Rechtliches</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className={footerLinkClass}>
+                  <a href={`${baseUrl}datenschutz/`} className={footerLinkClass}>
                     Datenschutz
                   </a>
                 </li>
                 <li>
-                  <a href="#" className={footerLinkClass}>
+                  <a href={`${baseUrl}impressum/`} className={footerLinkClass}>
                     Impressum
                   </a>
                 </li>

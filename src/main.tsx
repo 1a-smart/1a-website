@@ -51,12 +51,12 @@ function App() {
               <h3 className={footerSection}>Rechtliches</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className={linkClass}>
+                  <a href={`${baseUrl}datenschutz/`} className={linkClass}>
                     Datenschutz
                   </a>
                 </li>
                 <li>
-                  <a href="#" className={linkClass}>
+                  <a href={`${baseUrl}impressum/`} className={linkClass}>
                     Impressum
                   </a>
                 </li>

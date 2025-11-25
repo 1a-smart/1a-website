@@ -15,6 +15,8 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         "1a-gamer-lounge": resolve(__dirname, "1a-gamer-lounge/index.html"),
         "1a-nachhilfe": resolve(__dirname, "1a-nachhilfe/index.html"),
+        impressum: resolve(__dirname, "impressum/index.html"),
+        datenschutz: resolve(__dirname, "datenschutz/index.html"),
       },
     },
   },

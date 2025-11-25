@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "1a-nachhilfe", "1a-gamer-lounge"]
+  "include": ["src", "1a-nachhilfe", "1a-gamer-lounge", "impressum"]
 }
