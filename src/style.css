@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --box-shadow-neon: 0 0 20px rgba(0, 255, 255, 0.3);
+  --box-shadow-neon-hover: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+.shadow-neon {
+  box-shadow: var(--box-shadow-neon);
+}
+
+.shadow-neon-hover:hover {
+  box-shadow: var(--box-shadow-neon-hover);
+}
+
 @keyframes blob {
   0% {
     transform: translate(0px, 0px) scale(1);

@@ -16,7 +16,7 @@ function App() {
           style={{ backgroundImage: `url(${baseUrl}images/aussenansicht.jpg)` }}
         ></div>
         <div className="text-center space-y-8 relative z-10 px-6 py-12 bg-black/70 backdrop-blur-sm rounded-xl shadow-2xl text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-2">1A Smart</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-8">1A Smart</h1>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center text-lg font-semibold">
             <a href={`${baseUrl}1a-gamer-lounge/`} className={btnClass}>
               Zur 1A Gamer Lounge
