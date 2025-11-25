@@ -66,13 +66,13 @@ function App() {
 
       <section
         id="home"
-        className="min-h-screen flex items-center pt-16 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: `url(${baseUrl}images/aussenansicht.jpg)` }}
+        className="min-h-screen flex items-center lg:items-end lg:pb-40 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: `url(${baseUrl}images/nachhilfe.jpg)` }}
       >
         <div className="absolute inset-0 bg-white/40"></div>
-        <div className={`${containerClass} relative z-10 w-full`}>
-          <div className="mx-auto lg:mx-0 text-center lg:text-left max-w-3xl backdrop-blur-sm bg-white/60 rounded-xl p-8 shadow-lg">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-slate-800">
+        <div className={`${containerClass} relative z-10 w-full pb-8 lg:pb-16`}>
+          <div className="mx-auto lg:mx-0 text-center lg:text-left max-w-xl backdrop-blur-sm bg-white/60 rounded-xl p-6 shadow-lg">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-slate-800">
               Individuelle Nachhilfe
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8">

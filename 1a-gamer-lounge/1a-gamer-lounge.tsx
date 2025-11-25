@@ -80,7 +80,7 @@ function App() {
       </nav>
       <section
         id="home"
-        className="min-h-screen flex items-center pt-16 bg-cover bg-center bg-no-repeat relative"
+        className="min-h-screen flex pt-32 bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: `url(${baseUrl}images/hero.jpg)` }}
       >
         <div className="absolute inset-0 bg-slate-900/60"></div>
