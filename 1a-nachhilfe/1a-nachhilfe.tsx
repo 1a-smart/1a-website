@@ -19,6 +19,7 @@ function App() {
     { href: "#home", label: "Home" },
     { href: "#unser-angebot", label: "Unser Angebot" },
     { href: "#ueber-uns", label: "Über Uns" },
+    { href: "#termin", label: "Termin buchen" },
   ];
 
   return (
@@ -145,7 +146,50 @@ function App() {
         </div>
       </section>
 
-      <footer className="bg-gray-100 border-t border-gray-300">
+      <section id="termin" className="bg-gray-100 py-10 md:py-20">
+        <div
+          className={`${containerClass} grid grid-cols-1 lg:grid-cols-2 gap-12 items-center`}
+        >
+          <div className="px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-700">
+              Termin vereinbaren
+            </h2>
+            <div className="text-lg text-gray-700 space-y-4">
+              <p>
+                Bereit für den nächsten Schritt? Vereinbaren Sie jetzt ein kostenloses
+                Beratungsgespräch – ganz einfach und unverbindlich.
+              </p>
+              <p>
+                In einem persönlichen Gespräch lernen wir den Schüler kennen, besprechen
+                individuelle Lernziele und finden gemeinsam den passenden Nachhilfeplan.
+              </p>
+              <ul className="space-y-2 mt-4">
+                <li className="flex items-center">
+                  <span className="text-blue-700 mr-2">✓</span>
+                  Kostenlose Erstberatung
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-700 mr-2">✓</span>
+                  Flexible Terminwahl
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-700 mr-2">✓</span>
+                  Unverbindlich und persönlich
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="flex justify-center px-4 sm:px-6 lg:px-8">
+            <iframe
+              src="https://calendly.com/1asmartaugsburg/30min?hide_event_type_details=1"
+              className="w-full max-w-[500px] min-w-[320px] h-[700px] rounded-3xl overflow-hidden border border-gray-300"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-white border-t border-gray-300">
         <div className={`${containerClass} py-12`}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
